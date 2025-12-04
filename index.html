@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Application – Project Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Chess Application Project</h1>
+    <p class="subtitle">COP 4331 – Object-Oriented Programming</p>
+</header>
+
+<nav>
+    <a href="#overview">Overview</a>
+    <a href="#features">Features</a>
+    <a href="#uml">UML Diagrams</a>
+    <a href="#usecases">Use Cases</a>
+    <a href="#team">Team</a>
+</nav>
+
+<section id="overview">
+    <h2>📌 Project Overview</h2>
+    <p>
+        This desktop chess application allows users to play against AI bots (powered by Stockfish), 
+        play multiplayer games with friends, track match history, edit their profile, and manage friends.  
+        The project uses Java, Swing/JavaFX for the GUI, Firebase for authentication, and Firestore for data storage.
+    </p>
+
+    <div class="card">
+        <h3>Purpose</h3>
+        <p>Provide a complete chess experience with AI, multiplayer, match history, friends system, and user accounts.</p>
+    </div>
+
+    <div class="card">
+        <h3>Technology Stack</h3>
+        <ul>
+            <li>Java (Backend + Logic)</li>
+            <li>Swing / JavaFX (GUI)</li>
+            <li>Firebase Authentication</li>
+            <li>Firestore Database</li>
+            <li>Stockfish Chess Engine</li>
+        </ul>
+    </div>
+</section>
+
+<section id="features">
+    <h2>✨ Main Features</h2>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <h3>🔐 Login & Signup</h3>
+            <p>Users can create accounts and log in using Firebase Authentication.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🎮 Play Game</h3>
+            <p>Choose bot difficulty, colors, timers, and play a full chess match.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>👤 Profile Page</h3>
+            <p>View player stats (games won/lost) and update username.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🧑‍🤝‍🧑 Friends System</h3>
+            <p>Add friends, accept requests, and remove users from your friend list.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📜 Match History</h3>
+            <p>Scroll through saved games and review past match outcomes.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🏁 Results Page</h3>
+            <p>View final match results displayed in a clean table layout.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="usecases">
+    <h2>📘 Use Cases</h2>
+
+    <div class="card">
+        <h3>Match History Use Case</h3>
+        <ol>
+            <li>User navigates to Match History page.</li>
+            <li>System loads all stored match results.</li>
+            <li>System displays a scrollable list of matches.</li>
+            <li>Each entry shows opponent and outcome.</li>
+            <li>If none exist, display “No match history available.”</li>
+            <li>User may click Back to return to Home.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3>Friends Page Use Case</h3>
+        <ol>
+            <li>User opens Friends Page.</li>
+            <li>System displays friend list.</li>
+            <li>User may add friends or open incoming requests.</li>
+            <li>User may remove a friend.</li>
+            <li>User may go back to main menu.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3>Play Game Use Case</h3>
+        <ol>
+            <li>User selects game mode and timer.</li>
+            <li>Start Game becomes enabled.</li>
+            <li>Game launches with selected settings.</li>
+        </ol>
+    </div>
+
+</section>
+
+<section id="team">
+    <h2>👥 Team Members</h2>
+
+    <ul>
+        <li><strong>Saul P.</strong> — Authentication, Database, Match History Backend</li>
+        <li><strong>Marcelo V.</strong> — Sign In / Sign Up / Add Friends (first implementation)</li>
+        <li><strong>Aaroha S.</strong> — Play Game Page, Game Board Logic</li>
+        <li><strong>Maria C.</strong> — Friends Page (final UI), Add Friend Page (final UI), Profile Page, Results Page, UML Diagram Cleanup</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2024 Chess OOP Project — FAU COP4331</p>
+</footer>
+
+</body>
+</html>
